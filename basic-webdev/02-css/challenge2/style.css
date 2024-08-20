@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f4fe;
+  font-family: "Plus Jakarta Sans", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-bottom: 3rem;
+}
+nav {
+  position: sticky;
+  background-color: #ffffff;
+  box-shadow: 0 1px 20px #d4d4d4;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: end;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav div {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+nav div a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+nav div a:hover {
+  color: black;
+}
+nav div a:focus {
+  font-weight: bold;
+}
+
+/* Section Profile */
+section.section-profile {
+  display: flex;
+  background-color: #ffffff;
+  margin: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 0.5rem;
+}
+section.section-profile div.profile-head {
+  flex: 1;
+  border-right: 1px solid #ececec;
+  display: flex;
+  gap: 1rem;
+}
+section.section-profile div.profile-head img.photo-profile {
+  border-radius: 50%;
+}
+section.section-profile div.profile-head div.profile-head-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+}
+section.section-profile div.profile-head div.profile-head-detail h1 {
+  margin-bottom: 0.5rem;
+}
+section.section-profile
+  div.profile-head
+  div.profile-head-detail
+  div.profile-button {
+  display: flex;
+  gap: 0.5rem;
+}
+section.section-profile
+  div.profile-head
+  div.profile-head-detail
+  div.profile-button
+  button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+section.section-profile
+  div.profile-head
+  div.profile-head-detail
+  button.btn-contact:hover {
+  background-color: #b3ebf2;
+}
+section.section-profile
+  div.profile-head
+  div.profile-head-detail
+  button.btn-contact:focus {
+  background-color: #b3ebf2;
+  outline: 2px solid #b3ebf2;
+  outline-offset: 1px;
+}
+section.section-profile
+  div.profile-head
+  div.profile-head-detail
+  button.btn-resume:hover {
+  background-color: #c3b1e1;
+}
+section.section-profile
+  div.profile-head
+  div.profile-head-detail
+  button.btn-resume:focus {
+  background-color: #c3b1e1;
+  outline: 2px solid #c3b1e1;
+  outline-offset: 1px;
+}
+section.section-profile div.profile-detail {
+  flex: 1;
+  padding-left: 2rem;
+}
+section.section-profile div.profile-detail table tr td:first-child {
+  padding-right: 3rem;
+}
+
+/* Section Input */
+section.section-input {
+  background-color: #ffffff;
+  margin: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 0.5rem;
+}
+section.section-input form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+section.section-input form div input {
+  border: 1px solid #aaaaaa;
+  border-radius: 0.2rem;
+  margin-top: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.1rem;
+  color: #606060;
+}
+section.section-input form div input:focus {
+  outline: 0.75px solid #333333;
+}
+section.section-input form input[type="submit"] {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #77dd77;
+  border: none;
+  border-radius: 0.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+section.section-input form input[type="submit"]:focus {
+  outline: 2px solid #77dd77;
+  outline-offset: 1px;
+}
+
+/* Utility */
+.hover-pointer:hover {
+  cursor: pointer;
+}
+.btn-basic {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+.btn-basic img.btn-icon {
+  width: 1rem;
+}
+
+.text-black {
+  color: #111111;
+}
+.text-darkgray {
+  color: #333333;
+}
+.text-gray {
+  color: #999999;
+}
+
+/* Responsive */
+@media only screen and (max-width: 992px) {
+  section.section-profile {
+    display: block;
+  }
+  section.section-profile div.profile-head {
+    border-right: none;
+    display: inline-block;
+  }
+  section.section-profile
+    div.profile-head
+    div.profile-head-detail
+    div.profile-button {
+    margin-top: 0.75rem;
+  }
+  section.section-profile div.profile-detail {
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  nav {
+    text-align: center;
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Latihan 2 - Membuat Portofolio ( HTML & CSS )</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="#" class="hover-pointer text-gray">HOME</a>
+        <a href="#" class="hover-pointer text-gray">PRODUCT</a>
+        <a href="#" class="hover-pointer text-gray">GALLERY</a>
+        <a href="#" class="hover-pointer text-gray">BLOG</a>
+        <a href="#" class="hover-pointer text-gray">MY INVENTORY</a>
+      </div>
+    </nav>
+    <main>
+      <section class="section-profile">
+        <div class="profile-head">
+          <div>
+            <img
+              src="./photo-profile.png"
+              alt=""
+              width="100"
+              class="photo-profile"
+            />
+          </div>
+          <div class="profile-head-detail">
+            <div>
+              <h1>Christhoper Marcelino Mamahit</h1>
+              <p>Front End Designer</p>
+            </div>
+            <div class="profile-button">
+              <button class="btn-basic hover-pointer btn-contact">
+                <img src="./contact.svg" alt="Contact" class="btn-icon" />
+                <span>Kontak</span>
+              </button>
+              <button class="btn-basic hover-pointer btn-resume">
+                <img
+                  src="./download.svg"
+                  alt="Download Resume"
+                  class="btn-icon"
+                />
+                <span>Resume</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="profile-detail">
+          <table>
+            <tr>
+              <td>Availability</td>
+              <td class="text-gray">Full Time</td>
+            </tr>
+            <tr>
+              <td>Usia</td>
+              <td class="text-gray">17</td>
+            </tr>
+            <tr>
+              <td>Lokasi</td>
+              <td class="text-gray">Jakarta, Indonesia</td>
+            </tr>
+            <tr>
+              <td>Pengalaman</td>
+              <td class="text-gray">2 tahun</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td class="text-gray">developer@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-input">
+        <form action="">
+          <div>
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" class="text-darkgray" />
+          </div>
+          <div>
+            <label for="role">Role</label>
+            <input type="text" id="role" name="role" class="text-darkgray" />
+          </div>
+          <div>
+            <label for="availability">Availability</label>
+            <input
+              type="text"
+              id="availability"
+              name="availability"
+              class="text-darkgray"
+            />
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" class="text-darkgray" />
+          </div>
+          <div>
+            <label for="location">Lokasi</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              class="text-darkgray"
+            />
+          </div>
+          <div>
+            <label for="years_experience">Years Experience</label>
+            <input
+              type="text"
+              id="years_experience"
+              name="years_experience"
+              class="text-darkgray"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" class="text-darkgray" />
+          </div>
+          <input type="submit" value="Submit" class="hover-pointer" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
